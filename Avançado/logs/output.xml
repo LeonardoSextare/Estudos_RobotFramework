@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230814 14:00:13.643" rpa="false" schemaversion="4">
+<suite id="s1" name="Tarefa" source="d:\Arquivos Usuario\OneDrive - Precisão Sistemas\Documentos\GitHub\Robot-Framework-Estudos\Avançado\Modulo 4 - Libraries Customizadas\Tarefa\tarefa.robot">
+<test id="s1-t1" name="Utilizando as funções Python" line="6">
+<kw name="Verificar se o número 24214 é par" sourcename="Verificar se o número ${numero} é par">
+<kw name="Verificar Numero Impar Par" library="funcoes">
+<var>${retorno}</var>
+<arg>${numero}</arg>
+<msg timestamp="20230814 14:00:13.679" level="INFO">O número 24214.0 é Par!</msg>
+<msg timestamp="20230814 14:00:13.679" level="INFO">${retorno} = Par</msg>
+<status status="PASS" starttime="20230814 14:00:13.678" endtime="20230814 14:00:13.679"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${retorno}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230814 14:00:13.679" endtime="20230814 14:00:13.679"/>
+</kw>
+<status status="PASS" starttime="20230814 14:00:13.678" endtime="20230814 14:00:13.679"/>
+</kw>
+<kw name="Contar quantos caracteres tem a palavra &quot;Paralelepipedo&quot;" sourcename="Contar quantos caracteres tem a palavra &quot;${palavra}&quot;">
+<kw name="Contar Caracteres" library="funcoes">
+<var>${retorno}</var>
+<arg>${palavra}</arg>
+<msg timestamp="20230814 14:00:13.680" level="INFO">A palavra "Paralelepipedo" possui 14</msg>
+<msg timestamp="20230814 14:00:13.680" level="INFO">${retorno} = 14</msg>
+<status status="PASS" starttime="20230814 14:00:13.680" endtime="20230814 14:00:13.680"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Número de caracteres ${retorno}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230814 14:00:13.680" endtime="20230814 14:00:13.681"/>
+</kw>
+<status status="PASS" starttime="20230814 14:00:13.680" endtime="20230814 14:00:13.681"/>
+</kw>
+<status status="PASS" starttime="20230814 14:00:13.677" endtime="20230814 14:00:13.681"/>
+</test>
+<status status="PASS" starttime="20230814 14:00:13.645" endtime="20230814 14:00:13.682"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tarefa">Tarefa</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

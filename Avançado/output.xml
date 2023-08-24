@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230814 14:28:22.518" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSitePractice" source="d:\Arquivos Usuario\OneDrive - Precisão Sistemas\Documentos\GitHub\Robot-Framework-Estudos\Avançado\Modulo 5 - WEB Testing\tests\TestSitePractice.robot">
+<test id="s1-t1" name="Caso de Teste com PO 02: Adicionar Cliente" line="16">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230814 14:28:22.948" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230814 14:28:22.948" endtime="20230814 14:28:25.966"/>
+</kw>
+<status status="PASS" starttime="20230814 14:28:22.947" endtime="20230814 14:28:25.967"/>
+</kw>
+<kw name="Acessar a página home do site" library="Home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230814 14:28:25.969" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20230814 14:28:25.969" endtime="20230814 14:28:27.738"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${HOME_TOPMENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230814 14:28:32.903" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230814 14:28:32.904" level="FAIL">Element 'xpath=//*[@id="block_top_menu"]/ul' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230814 14:28:27.738" endtime="20230814 14:28:32.946"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230814 14:28:32.946" endtime="20230814 14:28:32.946"/>
+</kw>
+<status status="FAIL" starttime="20230814 14:28:25.968" endtime="20230814 14:28:32.947"/>
+</kw>
+<kw name="Clicar em &quot;Sign in&quot;" library="Resource">
+<status status="NOT RUN" starttime="20230814 14:28:32.948" endtime="20230814 14:28:32.948"/>
+</kw>
+<kw name="Informar um e-mail válido" library="Resource">
+<status status="NOT RUN" starttime="20230814 14:28:32.949" endtime="20230814 14:28:32.949"/>
+</kw>
+<kw name="Clicar em &quot;Create an account&quot;" library="Resource">
+<status status="NOT RUN" starttime="20230814 14:28:32.949" endtime="20230814 14:28:32.950"/>
+</kw>
+<kw name="Preencher os dados obrigatórios" library="Resource">
+<status status="NOT RUN" starttime="20230814 14:28:32.951" endtime="20230814 14:28:32.951"/>
+</kw>
+<kw name="Submeter cadastro" library="Resource">
+<status status="NOT RUN" starttime="20230814 14:28:32.952" endtime="20230814 14:28:32.952"/>
+</kw>
+<kw name="Conferir se o cadastro foi efetuado com sucesso" library="Resource">
+<status status="NOT RUN" starttime="20230814 14:28:32.953" endtime="20230814 14:28:32.953"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230814 14:28:32.954" endtime="20230814 14:28:35.110"/>
+</kw>
+<status status="PASS" starttime="20230814 14:28:32.954" endtime="20230814 14:28:35.110"/>
+</kw>
+<status status="FAIL" starttime="20230814 14:28:22.929" endtime="20230814 14:28:35.112">Element 'xpath=//*[@id="block_top_menu"]/ul' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230814 14:28:22.525" endtime="20230814 14:28:35.114"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestSitePractice">TestSitePractice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
