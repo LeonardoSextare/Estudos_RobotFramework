@@ -28,22 +28,22 @@ Uma keyword qualquer 01
     Set Test Variable      ${TESTE_01}   Variável do teste 01
     Log         ${TESTE_01}
     #A variável "local" pode ser utilizada somente na keyword em execução
-    ${LOCAL}    Set Variable    Variável local da keyword 01
+    ${LOCAL}    Set Local Variable    Variável local da keyword 01
     Log   ${LOCAL}
 
 Uma keyword qualquer 02
-    ${LOCAL}     Set Variable    Variável local da keyword 02
+    ${LOCAL}     Set Local Variable    Variável local da keyword 02
     Log    ${LOCAL}
     Log    ${GLOBAL_INSTANCIADA} / ${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO} / ${SUITE_CRIADA_EM_TEMPO_EXECUCAO} / ${LOCAL}
     # A keyword abaixo vai funcionar no Caso de Teste 01 e falhar no Case de Teste 02
     Log    ${TESTE_01}
 
 Uma keyword qualquer 03
-    ${LOCAL}     Set Variable    Variável local da keyword 03
+    ${LOCAL}     Set Local Variable    Variável local da keyword 03
     Log    ${LOCAL}
     Log    ${GLOBAL_INSTANCIADA} / ${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO} / ${SUITE_CRIADA_EM_TEMPO_EXECUCAO} / ${LOCAL}
 
 Uma keyword qualquer 04
-    ${LOCAL}     Set Variable    Variável local da keyword 04
+    ${LOCAL}     Set Local Variable    Variável local da keyword 04
     Log    ${LOCAL}
     Log    ${GLOBAL_INSTANCIADA} / ${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO} / ${SUITE_CRIADA_EM_TEMPO_EXECUCAO} / ${LOCAL}

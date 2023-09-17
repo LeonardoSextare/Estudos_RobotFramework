@@ -23,5 +23,5 @@ Usando WHILE para loop
     WHILE  ${STATUS} <= 5
         Log  Executando esse bloco enquanto o valor da variável STATUS [${STATUS}] for menor ou igual a 5!
         Log To Console  Executando esse bloco enquanto o valor da variável STATUS [${STATUS}] for menor ou igual a 5!
-        ${STATUS}  Set Variable  ${STATUS+1}
+        ${STATUS}  Set Local Variable  ${STATUS+1}
     END

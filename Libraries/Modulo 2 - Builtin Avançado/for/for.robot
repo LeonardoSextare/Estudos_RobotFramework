@@ -75,7 +75,7 @@ Apenas quantidade de laços informada (limite superior)
 
 Aritmético
     [Documentation]    Percorre de 0 até 5
-    ${var}   Set Variable    ${5}
+    ${var}   Set Local Variable    ${5}
     FOR    ${index}    IN RANGE    ${var} + 1
         Log    ${index}
     END

@@ -17,7 +17,7 @@ Caso de teste exemplo 01
 *** Keywords ***
 Usando LOG para mensagens
     Log     Minha mensagem de LOG
-    ${VAR}  Set Variable    variável qualquer
+    ${VAR}  Set Local Variable    variável qualquer
     Log     Posso logar uma ${VAR} no meio de um log
 
 Usando LOG Console
